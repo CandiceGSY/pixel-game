@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --pixel-bg: #202028;
+    --pixel-text: #fff;
+    --pixel-primary: #f0f;
+    --pixel-accent: #0ff;
+    --pixel-success: #0f0;
+    --pixel-error: #f00;
+    --pixel-border: 4px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--pixel-bg);
+    color: var(--pixel-text);
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    /* Ensure vertical centering */
+}
+
+/* Utilities */
+.container {
+    border: var(--pixel-border) solid var(--pixel-text);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    position: relative;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    background: var(--pixel-primary);
+    color: #fff;
+    border: var(--pixel-border) solid #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.secondary-btn {
+    background: var(--pixel-accent);
+    color: #000;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    font-family: 'Press Start 2P', cursive;
+    background: #000;
+    color: #fff;
+    border: var(--pixel-border) solid var(--pixel-text);
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--pixel-accent);
+    text-shadow: 4px 4px 0 #000;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.error {
+    color: var(--pixel-error);
+}
